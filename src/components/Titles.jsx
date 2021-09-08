@@ -6,6 +6,7 @@ import {gsap} from "gsap";
 const Titles = ({...props}) => {
     const span = useRef(null);
     const span2 = useRef(null);
+
     useEffect(() => {
         gsap.to('body', 0, {css: {visibility: 'visible', background: 'white'}});
         const anim = gsap.timeline()
