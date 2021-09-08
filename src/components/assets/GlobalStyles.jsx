@@ -15,7 +15,11 @@ const GlobalStyless = createGlobalStyle`
 
   body {
     font-family: Roboto, sans-serif;
+    visibility: hidden;
+    background: black;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   

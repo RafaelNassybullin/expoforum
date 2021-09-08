@@ -89,7 +89,7 @@ const ImageWrap = styled.div`
   }
 
   .image {
-
+    overflow: hidden;
   }
 
   .images-testimonials {
@@ -100,10 +100,8 @@ const ImageWrap = styled.div`
     cursor: pointer;
 
     &:hover {
-
       .image {
         opacity: 1;
-
       }
     }
 
@@ -123,10 +121,33 @@ const ImageWrap = styled.div`
       }
 
       h3 {
+        font-size: 1.2rem;
+        opacity: 0.8;
 
+        @media (max-width: 768px) {
+          font-size: 1.4rem;
+        }
+        @media (max-width: 425px) {
+          font-size: 1.2rem;
+          line-height: 2.2rem;
+        }
       }
 
       h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        width: 85%;
+        margin-top: 16px;
+        color: white;
+
+        @media (max-width: 768px) {
+          font-size: 1.5rem;
+
+        }
+        @media (max-width: 425px) {
+          line-height: 2rem;
+          margin-top: 8px;
+        }
 
       }
     }
@@ -136,8 +157,8 @@ const ImageWrap = styled.div`
       height: 100%;
       position: absolute;
       top: 0;
-      opacity: 0.4;
-      transition: 500ms ease-in-out;
+      opacity: 0.6;
+      transition: 400ms ease-in-out;
       transition-property: opacity;
       left: 0;
 

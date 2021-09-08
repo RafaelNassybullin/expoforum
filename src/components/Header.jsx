@@ -69,9 +69,15 @@ const Logo = styled.div`
 `
 const Burger = styled.div`
   width: 25px;
+  height: 25px;
   cursor: pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
   @media (max-width: 425px) {
     width: 20px;
+    height: 20px;
   }
 
   span {
@@ -81,4 +87,5 @@ const Burger = styled.div`
     width: 25px;
     display: block;
   }
+  
 `

@@ -1,19 +1,53 @@
-import React from 'react';
+import React, {useRef, useEffect} from 'react';
 import styled from 'styled-components';
-// import { gsap } from "gsap";
+import {gsap} from "gsap";
 
 
-const Titles = () => {
+const Titles = ({...props}) => {
+    const span = useRef(null);
+    const span2 = useRef(null);
+    useEffect(() => {
+        gsap.to('body', 0, {css: {visibility: 'visible', background: 'white'}});
+        const anim = gsap.timeline()
+        anim.from([span.current, span2.current], 1.8, {
+            y: 100,
+            delay: 1,
+            ease: 'power4.out',
+            skewY: 7,
+            stagger: {
+                amount: 0.3
+            }
+        }).to('.top', 1.6, {
+            height: 0,
+            ease: 'inOut',
+            stagger: 0.4
+        }).to('.bottom', 1.6, {
+            width: 0,
+            ease: 'inOut',
+            delay: -0.8,
+            stagger: {
+                amount: 0.4
+            }
+        }).to('.wrap', 0, {css: {display: 'none'}}).from('.image img', 1.6, {
+            scale: 1.4,
+            ease: 'inOut',
+            delay: -2,
+            stagger: {
+                amount: 0.4
+            }
+        })
+    }, [])
+
 
     return (
         <Main>
             <Wrapperr>
                 <h2>
                     <Line>
-                        <span>Creating unique brand is</span>
+                        <span ref={span}>Creating unique brand is</span>
                     </Line>
                     <Line>
-                        <span>what we do</span>
+                        <span ref={span2}>what we do</span>
                     </Line>
                 </h2>
                 <Button>
