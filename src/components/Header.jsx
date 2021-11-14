@@ -85,7 +85,6 @@ const Burger = styled.div`
     background: black;
     height: 2px;
     width: 25px;
-    display: block;
   }
   
 `

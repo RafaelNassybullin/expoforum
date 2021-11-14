@@ -41,15 +41,12 @@ const Top = styled.div`
   @media (max-width: 768px) {
     width: 100vw;
   }
-
-
   &:nth-child(2) {
     left: 33.333vw;
     @media (max-width: 768px) {
       display: none;
     }
   }
-
   &:nth-child(3) {
     left: 66.666vw;
     @media (max-width: 768px) {

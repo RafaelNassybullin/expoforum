@@ -1,58 +1,23 @@
-import React, {useRef, useEffect} from 'react';
+import React from 'react';
 import styled from 'styled-components';
-import {gsap} from "gsap";
 
 
-const Titles = ({...props}) => {
-    const span = useRef(null);
-    const span2 = useRef(null);
-
-    useEffect(() => {
-        gsap.to('body', 0, {css: {visibility: 'visible', background: 'white'}});
-        const anim = gsap.timeline()
-        anim.from([span.current, span2.current], 1.8, {
-            y: 100,
-            delay: 1,
-            ease: 'power4.out',
-            skewY: 7,
-            stagger: {
-                amount: 0.3
-            }
-        }).to('.top', 1.6, {
-            height: 0,
-            ease: 'inOut',
-            stagger: 0.4
-        }).to('.bottom', 1.6, {
-            width: 0,
-            ease: 'inOut',
-            delay: -0.8,
-            stagger: {
-                amount: 0.4
-            }
-        }).to('.wrap', 0, {css: {display: 'none'}}).from('.image img', 1.6, {
-            scale: 1.4,
-            ease: 'inOut',
-            delay: -2,
-            stagger: {
-                amount: 0.4
-            }
-        })
-    }, [])
-
-
+const Titles = () => {
     return (
         <Main>
             <Wrapperr>
                 <h2>
                     <Line>
-                        <span ref={span}>Creating unique brand is</span>
+                        <span className={'spano'}>Creating unique brand is</span>
                     </Line>
                     <Line>
-                        <span ref={span2}>what we do</span>
+                        <span className={'spano'}>what we do</span>
                     </Line>
                 </h2>
                 <Button>
-                    <a href="/">More about us <Icons>7</Icons></a>
+                    <a href="/">More about us <Icons>
+                        <svg width='2vw' fill='black' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 593.98 594"><path d="M297.14,0C460.88.05,594.07,133.3,594,297c-.09,164.34-133.3,297.2-297.8,297C133,593.82-.12,460.27,0,296.78.12,133.05,133.38,0,297.14,0Zm60.19,339c-1.66,1.77-2.53,2.75-3.44,3.68-16.11,16.63-32.36,33.12-48.29,49.91-15.15,16-15.67,40.56-1.58,56.32,17.62,19.7,45.1,19.74,63.8.2q18.82-19.68,37.83-39.17c27.37-28.2,54.92-56.23,82.1-84.61,15.07-15.74,14.82-40.74,0-56.73-4.75-5.13-9.74-10-14.61-15.06q-52.68-54.33-105.35-108.69c-11.54-11.94-25.24-17.21-41.61-13.29-31.74,7.62-43,46-20.54,69.87,12.22,13,24.8,25.6,37.19,38.4,4.65,4.8,9.24,9.65,14.49,15.14h-136c-28.32,0-56.64-.15-85,.06-25.18.18-44.46,23.29-40.55,48.18,3.29,20.93,20.38,35.74,41.6,35.76q104,.09,207.93,0Z"/></svg>
+                    </Icons></a>
                 </Button>
             </Wrapperr>
         </Main>
@@ -145,20 +110,15 @@ const Button = styled.div`
       font-size: 1.1rem;
     }
 
-    &:hover {
-      div {
-        background: black;
-        color: white;
-      }
-    }
+    
   }
 `
 const Icons = styled.div`
-  margin-left: 16px;
-  border: 2px solid black;
+  margin-left: 10px;
+  //border: 2px solid black;
   padding: 12px;
-  height: 24px;
-  width: 25px;
+  //height: 24px;
+  //width: 25px;
   border-radius: 50%;
   transition: 400ms ease-in-out;
   transition-property: background, color;
