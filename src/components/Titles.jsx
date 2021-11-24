@@ -115,10 +115,7 @@ const Button = styled.div`
 `
 const Icons = styled.div`
   margin-left: 10px;
-  //border: 2px solid black;
   padding: 12px;
-  //height: 24px;
-  //width: 25px;
   border-radius: 50%;
   transition: 400ms ease-in-out;
   transition-property: background, color;
