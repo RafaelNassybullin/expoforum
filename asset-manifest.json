@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/Rafael/static/js/main.8f2da4c8.chunk.js",
-    "main.js.map": "/Rafael/static/js/main.8f2da4c8.chunk.js.map",
-    "runtime-main.js": "/Rafael/static/js/runtime-main.e24f1450.js",
-    "runtime-main.js.map": "/Rafael/static/js/runtime-main.e24f1450.js.map",
-    "static/js/2.3b5d82c5.chunk.js": "/Rafael/static/js/2.3b5d82c5.chunk.js",
-    "static/js/2.3b5d82c5.chunk.js.map": "/Rafael/static/js/2.3b5d82c5.chunk.js.map",
-    "index.html": "/Rafael/index.html",
-    "static/js/2.3b5d82c5.chunk.js.LICENSE.txt": "/Rafael/static/js/2.3b5d82c5.chunk.js.LICENSE.txt",
-    "static/media/IMG0400.40e36c0f.JPG": "/Rafael/static/media/IMG0400.40e36c0f.JPG",
-    "static/media/IMG0401.338c123f.JPG": "/Rafael/static/media/IMG0401.338c123f.JPG",
-    "static/media/IMG0403.ad8a8088.JPG": "/Rafael/static/media/IMG0403.ad8a8088.JPG"
+    "main.js": "/expoforum/static/js/main.8f2da4c8.chunk.js",
+    "main.js.map": "/expoforum/static/js/main.8f2da4c8.chunk.js.map",
+    "runtime-main.js": "/expoforum/static/js/runtime-main.c8bc04a0.js",
+    "runtime-main.js.map": "/expoforum/static/js/runtime-main.c8bc04a0.js.map",
+    "static/js/2.32f29977.chunk.js": "/expoforum/static/js/2.32f29977.chunk.js",
+    "static/js/2.32f29977.chunk.js.map": "/expoforum/static/js/2.32f29977.chunk.js.map",
+    "index.html": "/expoforum/index.html",
+    "static/js/2.32f29977.chunk.js.LICENSE.txt": "/expoforum/static/js/2.32f29977.chunk.js.LICENSE.txt",
+    "static/media/IMG0400.40e36c0f.JPG": "/expoforum/static/media/IMG0400.40e36c0f.JPG",
+    "static/media/IMG0401.338c123f.JPG": "/expoforum/static/media/IMG0401.338c123f.JPG",
+    "static/media/IMG0403.ad8a8088.JPG": "/expoforum/static/media/IMG0403.ad8a8088.JPG"
   },
   "entrypoints": [
-    "static/js/runtime-main.e24f1450.js",
-    "static/js/2.3b5d82c5.chunk.js",
+    "static/js/runtime-main.c8bc04a0.js",
+    "static/js/2.32f29977.chunk.js",
     "static/js/main.8f2da4c8.chunk.js"
   ]
 }
